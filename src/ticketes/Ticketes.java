@@ -55,7 +55,7 @@ public class Ticketes {
                 Vuelo vuelo = optenerVuelo(i);
                 System.out.println("Codigo Vuelo:" + vuelo.obtenerCodigoVuelo() + " Destino:" + vuelo.obtenerNombreDestino() + " Precio:" + optenerPrecioFinal(cliente,vuelo,false));               
             }
-            System.out.print("Ingrese el cimprimirArtedigo Vuelo:");
+            System.out.print("Ingrese el codigo Vuelo:");
             codigoVuelo = entrada.nextInt();
             Vuelo vuelo = optenerVuelo(codigoVuelo);
             String tickete = comprarTickete(cliente,vuelo);
