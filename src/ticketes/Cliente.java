@@ -11,35 +11,35 @@ package ticketes;
  */
 public class Cliente {
 
-    private int _codigoCliente;
-    private String _nombreCliente;
-    private boolean _tieneDescuento; 
+    private int codigoCliente;
+    private String nombreCliente;
+    private boolean tieneDescuento; 
 
     public void cargarCliente(int codigoCliente, String nombreCliente, boolean tieneDescuento) 
     {
-        this._codigoCliente = codigoCliente;
-        this._nombreCliente = nombreCliente;
-        this._tieneDescuento = tieneDescuento;
+        this.codigoCliente = codigoCliente;
+        this.nombreCliente = nombreCliente;
+        this.tieneDescuento = tieneDescuento;
     }
     
     public int obtenerCodigoCliente() 
     {
-        return _codigoCliente;
+        return this.codigoCliente;
     }
 
     public String obtenerNombreCliente() 
     {
-        return _nombreCliente;
+        return this.nombreCliente;
     }
 
     public boolean obtenerTieneDescuento() 
     {
-        return _tieneDescuento;
+        return this.tieneDescuento;
     }
     
     public void establecerTieneDescuento(boolean tieneDescuento) 
     {
-        this._tieneDescuento = tieneDescuento;
+        this.tieneDescuento = tieneDescuento;
     }
 
 }

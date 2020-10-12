@@ -10,38 +10,38 @@ package ticketes;
  * @author ferna
  */
 public class Vuelo {
-    private int _codigoVuelo;
-    private String _nombreDestino;
-    private double _precio;
-    private boolean _estaAtrasado; 
+    private int codigoVuelo;
+    private String nombreDestino;
+    private double precio;
+    private boolean estaAtrasado; 
        
 
     public void cargarVuelo(int codigoVuelo, String nombreDestino,double precio, boolean estaAtrasado) 
     {
-        this._codigoVuelo = codigoVuelo;
-        this._nombreDestino = nombreDestino;
-        this._precio = precio;
-        this._estaAtrasado = estaAtrasado;
+        this.codigoVuelo = codigoVuelo;
+        this.nombreDestino = nombreDestino;
+        this.precio = precio;
+        this.estaAtrasado = estaAtrasado;
     }
     
     public int obtenerCodigoVuelo() 
     {
-        return _codigoVuelo;
+        return this.codigoVuelo;
     }
 
     public String obtenerNombreDestino() 
     {
-        return _nombreDestino;
+        return this.nombreDestino;
     }
     
     public double obtenerPrecio() 
     {
-        return _precio;
+        return this.precio;
     }
 
     public boolean obtenerEstaAtrasado() 
     {
-        return _estaAtrasado;
+        return this.estaAtrasado;
     }
     
 }
