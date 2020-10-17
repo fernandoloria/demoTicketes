@@ -76,15 +76,25 @@ public class Ticketes {
     {
         String str = "";
         str += "Estimados pasajeros, todos nuestros vuelos estan atrasados les ofrecemos las disculpas por los inconvenientes. \n";
-        for(int i=0;i<6;i++)
+        int n = 7;
+        for(int i=0;i<n;i++)
         {
             for(int e=0;e<i;e++)
             {
-                str += " ";
-            }
-            str +="*\n"; 
+                if(i==(n-1))
+                {
+                    str += "*";
+                }
+                else
+                {
+                    str += " ";
+                }
+                if(e==(i-1))
+                {
+                    str +="*\n";
+                }
+            }  
         }
-        str += "*******";
         return str;
     }
     
